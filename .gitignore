@@ -1,0 +1,84 @@
+# Python bytecode and interpreter artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Python packaging and build output
+build/
+dist/
+site/
+*.egg
+*.egg-info/
+wheels/
+pip-wheel-metadata/
+
+# Test, lint, type-check, and coverage caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pytype/
+.tox/
+.nox/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+
+# Notebook runtime state
+.ipynb_checkpoints/
+
+# Local editor and operating-system files
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo
+*~
+.idea/
+
+# Local environment variables and credentials
+.env
+.env.*
+!.env.example
+!.env.template
+
+# Local logs and experiment tracking
+*.log
+wandb/
+mlruns/
+lightning_logs/
+runs/
+
+# Downloaded model and dataset caches, if created inside this project
+.cache/
+.huggingface/
+hf_cache/
+transformers_cache/
+
+# Source datasets are kept locally; do not commit third-party or licensed data.
+/data/raw/*
+!/data/raw/.gitkeep
+!/data/raw/README.md
+
+# Regenerable prepared datasets and train/validation/test splits.
+/data/processed/*
+!/data/processed/.gitkeep
+
+# Generated reports, audit samples, predictions, and metrics can contain
+# dataset text and are reproducible from the source and scripts.
+/results/*
+!/results/.gitkeep
+
+# Fine-tuned model weights, tokenizer files, and training checkpoints.
+/models/*
+!/models/.gitkeep
